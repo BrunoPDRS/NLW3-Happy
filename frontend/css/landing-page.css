@@ -1,0 +1,36 @@
+#landing-page {
+  min-height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  text-align: center;
+  display: flex;
+}
+
+#container {
+  margin: auto;
+  width: 90%;
+}
+
+#btn-next {
+  width: 8rem;
+  height: 8rem;
+  background: #ffd666;
+
+  border: none;
+  border-radius: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  transition: background 200ms;
+}
+
+#btn-next:hover {
+  background: #96feff;
+}
+
+.location, h1, .visit p {
+  height: 16vh;
+}
