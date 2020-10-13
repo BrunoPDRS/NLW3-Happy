@@ -7,7 +7,13 @@
 
 #container {
   margin: auto;
-  width: 90%;
+  width: min(90%, 112rem);
+}
+
+.location,
+h1,
+.visit p {
+  height: 16vh;
 }
 
 #btn-next {
@@ -31,6 +37,56 @@
   background: #96feff;
 }
 
-.location, h1, .visit p {
-  height: 16vh;
+@media (min-width: 760px) {
+  #container {
+    padding: 5rem 2rem;
+    /* background: image repeat position / size */
+    background: url("../images/bg.svg") no-repeat 80% /
+      clamp(30rem, 54vw, 56rem);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: initial;
+  }
+
+  .location,
+  main h1,
+  .visit p {
+    height: initial;
+    text-align: left;
+  }
+
+  main h1 {
+    font-size: clamp(4rem, 8vw, 8.4rem); /* min, where to go, max */
+    font-weight: bold;
+    line-height: 0.88;
+
+    width: min(300px, 80%);
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  #btn-next {
+    margin: initial;
+  }
 }
