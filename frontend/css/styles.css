@@ -16,12 +16,15 @@ body {
   background: #ebf2f5;
 }
 
-body, input, textarea, button {
+body,
+input,
+textarea,
+button {
   /*
   font-size: 18px;
   line-height: 1;
   font-weight: 400;
   font-family: 'Nunito', sans-serif;
   */
-  font: 400 1.8rem/1 'Nunito', sans-serif;
+  font: 400 1.8rem/1 "Nunito", sans-serif;
 }
